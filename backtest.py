@@ -1,81 +1,132 @@
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 from strategies.moving_average_crossover import generate_signals
+import os
 
-def run_backtest(symbol='AAPL', initial_capital=100000.0):
+def run_portfolio_backtest(initial_capital=10000.0, position_risk_percent=0.05):
     """
-    Runs a backtest for the SMA crossover strategy and prints the results.
+    Runs a realistic, time-based backtest on a single portfolio across all S&P 500 stocks.
     """
-    # 1. LOAD DATA
-    file_path = f"data/historical_data/{symbol}_data.csv"
-    data = pd.read_csv(file_path, index_col='date', parse_dates=True)
-
-    # 2. GENERATE SIGNALS
-    # Use the function from your strategies folder
-    signals_df = generate_signals(data)
+    print("Loading all S&P 500 data...")
+    data_dir = "data/historical_data/"
+    all_files = [f for f in os.listdir(data_dir) if f.endswith('_data.csv') and 'SPY' not in f]
     
-    # Merge signals with the main dataframe
-    data = data.join(signals_df['positions'])
-    data['positions'].fillna(0.0, inplace=True)
+    all_data = {}
+    for filename in all_files:
+        symbol = filename.replace('_data.csv', '')
+        file_path = os.path.join(data_dir, filename)
+        df = pd.read_csv(file_path, index_col='date', parse_dates=True)
+        if len(df) > 50:
+            signals_df = generate_signals(df)
+            df['positions'] = signals_df['positions']
+            all_data[symbol] = df
 
-    # 3. SIMULATE TRADING
-    portfolio = pd.DataFrame(index=data.index)
-    portfolio['holdings'] = 0.0  # Total value of stock held
-    portfolio['cash'] = initial_capital
-    portfolio['total'] = initial_capital
+    master_index = pd.DatetimeIndex([])
+    for df in all_data.values():
+        master_index = master_index.union(df.index)
+    all_dates = master_index.sort_values()
+
+    cash = initial_capital
+    portfolio_value_history = []
+    positions = {}
+    trades = []
     
-    positions = 0  # Number of shares held
+    print("Starting day-by-day portfolio simulation...")
+    for date in all_dates:
+        for symbol in list(positions.keys()):
+            if date in all_data[symbol].index:
+                signal = all_data[symbol].loc[date, 'positions']
+                if signal == -1.0:
+                    current_price = all_data[symbol].loc[date, 'close']
+                    position_info = positions.pop(symbol)
+                    exit_price = current_price
+                    pnl = (exit_price - position_info['entry_price']) * position_info['shares']
+                    cash += position_info['shares'] * exit_price
+                    trades.append({
+                        'symbol': symbol, 'pnl': pnl, 
+                        'pnl_percent': (exit_price / position_info['entry_price'] - 1) * 100
+                    })
 
-    for i in range(len(data)):
-        signal = data['positions'].iloc[i]
-        close_price = data['close'].iloc[i]
+        current_portfolio_value = cash + sum(pos['shares'] * all_data[s].loc[date, 'close'] 
+                                             for s, pos in positions.items() if date in all_data[s].index)
+        
+        for symbol, df in all_data.items():
+            if date in df.index and symbol not in positions:
+                signal = df.loc[date, 'positions']
+                if signal == 1.0:
+                    position_size_usd = current_portfolio_value * position_risk_percent
+                    if cash >= position_size_usd:
+                        current_price = df.loc[date, 'close']
+                        shares_to_buy = position_size_usd // current_price
+                        if shares_to_buy > 0:
+                            cash -= shares_to_buy * current_price
+                            positions[symbol] = {'shares': shares_to_buy, 'entry_price': current_price}
 
-        if signal == 1.0: # Buy Signal
-            # "Buy" as many shares as possible
-            shares_to_buy = portfolio['cash'].iloc[i] // close_price
-            positions += shares_to_buy
-            portfolio.loc[data.index[i]:, 'cash'] -= shares_to_buy * close_price
-            print(f"{data.index[i].date()}: BUY {shares_to_buy} shares at ${close_price:.2f}")
+        current_portfolio_value = cash + sum(pos['shares'] * all_data[s].loc[date, 'close'] 
+                                             for s, pos in positions.items() if date in all_data[s].index)
+        portfolio_value_history.append({'date': date, 'value': current_portfolio_value})
 
-        elif signal == -1.0: # Sell Signal
-            # Sell all shares
-            portfolio.loc[data.index[i]:, 'cash'] += positions * close_price
-            print(f"{data.index[i].date()}: SELL {positions} shares at ${close_price:.2f}")
-            positions = 0
+    return pd.DataFrame(portfolio_value_history).set_index('date'), trades
 
-        # Update portfolio total value for the day
-        portfolio.loc[data.index[i]:, 'holdings'] = positions * close_price
-        portfolio.loc[data.index[i]:, 'total'] = portfolio['cash'].iloc[i] + portfolio['holdings'].iloc[i]
-
-    return portfolio, data
-
-def analyze_results(portfolio, data):
-    """Calculates and prints performance metrics."""
-    final_portfolio_value = portfolio['total'].iloc[-1]
-    total_return = (final_portfolio_value / portfolio['total'].iloc[0] - 1) * 100
+def analyze_results(portfolio_df, trades):
+    """Calculates and displays detailed performance metrics and a plot."""
+    trades_df = pd.DataFrame(trades)
+    winning_trades = trades_df[trades_df['pnl'] > 0]
+    losing_trades = trades_df[trades_df['pnl'] <= 0]
     
-    # Calculate Buy & Hold return
-    buy_hold_return = (data['close'].iloc[-1] / data['close'].iloc[0] - 1) * 100
+    win_rate = len(winning_trades) / len(trades_df) * 100 if len(trades_df) > 0 else 0
+    profit_factor = winning_trades['pnl'].sum() / abs(losing_trades['pnl'].sum()) if abs(losing_trades['pnl'].sum()) > 0 else float('inf')
+    
+    running_max = portfolio_df['value'].cummax()
+    drawdown = (portfolio_df['value'] - running_max) / running_max
+    max_drawdown = drawdown.min() * 100
 
-    print("\n--- Backtest Results ---")
-    print(f"Final Portfolio Value: ${final_portfolio_value:,.2f}")
-    print(f"Total Strategy Return: {total_return:.2f}%")
-    print(f"Buy & Hold Return: {buy_hold_return:.2f}%")
-    print("------------------------")
-
-    # Plotting the results
-    plt.figure(figsize=(12, 8))
-    plt.plot(portfolio['total'], label='Strategy Portfolio Value')
-    # Plot Buy & Hold performance
-    plt.plot(data['close'] / data['close'].iloc[0] * portfolio['total'].iloc[0], label='Buy & Hold (AAPL)')
-    plt.title('SMA Crossover Strategy vs. Buy & Hold')
-    plt.xlabel('Date')
-    plt.ylabel('Portfolio Value ($)')
-    plt.legend()
-    plt.grid(True)
+    print("\n--- Realistic Portfolio Backtest Summary ---")
+    print(f"Initial Capital: ${portfolio_df['value'].iloc[0]:,.2f}")
+    print(f"Final Portfolio Value: ${portfolio_df['value'].iloc[-1]:,.2f}")
+    print(f"Total Return: {(portfolio_df['value'].iloc[-1] / portfolio_df['value'].iloc[0] - 1) * 100:.2f}%")
+    print("-" * 20)
+    print(f"Total Trades Executed: {len(trades_df)}")
+    print(f"Win Rate: {win_rate:.2f}%")
+    print(f"Profit Factor: {profit_factor:.2f}")
+    print(f"Maximum Drawdown: {max_drawdown:.2f}%")
+    
+    # --- PLOTTING SECTION ---
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(15, 12), gridspec_kw={'height_ratios': [3, 1]})
+    
+    # Plot Strategy Performance
+    ax1.plot(portfolio_df.index, portfolio_df['value'], label='SMA Crossover Strategy', color='royalblue')
+    
+    # --- NEW CODE TO PLOT SPY BENCHMARK ---
+    try:
+        spy_data = pd.read_csv('data/historical_data/SPY_data.csv', index_col='date', parse_dates=True)
+        spy_data = spy_data.reindex(portfolio_df.index, method='ffill')
+        spy_equity = (spy_data['close'] / spy_data['close'].iloc[0]) * portfolio_df['value'].iloc[0]
+        ax1.plot(spy_equity.index, spy_equity, label='SPY (Buy & Hold)', color='gray', linestyle='--')
+    except FileNotFoundError:
+        print("\nSPY_data.csv not found. Skipping benchmark plot.")
+    # --- END OF NEW CODE ---
+    
+    ax1.set_title('Portfolio Performance with Dynamic Capital Allocation')
+    ax1.set_ylabel('Portfolio Value ($)')
+    ax1.legend()
+    ax1.grid(True)
+    
+    # Plot Drawdown
+    ax2.fill_between(drawdown.index, drawdown * 100, 0, color='red', alpha=0.3)
+    ax2.set_title('Portfolio Drawdown')
+    ax2.set_ylabel('Drawdown (%)')
+    ax2.set_xlabel('Date')
+    ax2.grid(True)
+    
+    plt.tight_layout()
     plt.show()
 
 if __name__ == "__main__":
-    # Run the backtest and analyze the results
-    portfolio_results, market_data = run_backtest(symbol='AAPL')
-    analyze_results(portfolio_results, market_data)
+    final_portfolio, all_trades = run_portfolio_backtest(
+        initial_capital=10000.0, 
+        position_risk_percent=0.05
+    )
+    if not final_portfolio.empty:
+        analyze_results(final_portfolio, all_trades)
