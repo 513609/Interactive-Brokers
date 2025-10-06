@@ -10,14 +10,18 @@ def fetch_and_save_data(symbol, duration='2 Y', bar_size='1 day'):
     pass
 
 # This is the function we need to run now
-def fetch_all_sp500_data(duration='2 Y', bar_size='1 day'):
+def fetch_all_sp500_data(duration='10 Y', bar_size='1 day'):
     """
     Fetches historical data for all S&P 500 stocks and saves them to CSVs.
     """
     config = configparser.ConfigParser()
     config.read('config/config.ini')
     ibkr_config = config['ibkr']
-    tickers = get_sp500_tickers()
+
+    # Add SPY to the list of tickers to fetch, as it represents the S&P 500 index ETF.
+    # We use a set to avoid duplicates if get_sp500_tickers() already includes it.
+    tickers = ['SPY'] + get_sp500_tickers()
+    tickers = sorted(list(set(tickers)))
 
     data_dir = "data/historical_data/"
     if not os.path.exists(data_dir):
@@ -33,11 +37,6 @@ def fetch_all_sp500_data(duration='2 Y', bar_size='1 day'):
         print("Connection successful.")
 
         for i, symbol in enumerate(tickers):
-            # Check if file already exists to avoid re-downloading
-            if os.path.exists(f"{data_dir}{symbol}_data.csv"):
-                print(f"Data for {symbol} already exists. Skipping.")
-                continue
-
             print(f"Fetching data for {symbol} ({i + 1}/{len(tickers)})...")
             try:
                 contract = Stock(symbol, 'SMART', 'USD')
