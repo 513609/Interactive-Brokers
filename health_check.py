@@ -54,19 +54,34 @@ def run_health_check():
             log.error(f"--> [FAIL] Account '{account_number}' not found in managed accounts: {managed_accounts}")
 
         # 4. Market Data Check (Algo Trading Prerequisite)
-        log.info("4. Checking market data subscription for a common stock (SPY)...")
-        spy_contract = Stock('SPY', 'SMART', 'USD')
-        ib.reqMktData(spy_contract, '', False, False)
-        ib.sleep(2)  # Allow time for data to arrive
-        ticker = ib.ticker(spy_contract)
-        ib.cancelMktData(spy_contract)
+        log.info("4. Checking market data subscription for a common stock (AAPL)...")
+        aapl_contract = Stock('AAPL', 'SMART', 'USD')
+        ib.reqMktData(aapl_contract, '', False, False)
+        ib.sleep(3)  # Allow a bit more time for data to arrive
+        ticker = ib.ticker(aapl_contract)
+        is_delayed_attempt = False
 
+        # If live data fails (common with paper accounts), try requesting delayed data
+        if not (ticker and ticker.last > 0):
+            is_delayed_attempt = True
+            log.warning("--> [INFO] Live market data request failed. Trying again with delayed data setting...")
+            ib.cancelMktData(aapl_contract) # Clean up the previous request
+            ib.reqMarketDataType(3) # 1=Live, 2=Frozen, 3=Delayed, 4=Delayed Frozen
+            ib.reqMktData(aapl_contract, '', False, False)
+            ib.sleep(3)
+            ticker = ib.ticker(aapl_contract)
+
+        # Final check after potentially trying both live and delayed
         if ticker and ticker.last > 0:
-            log.info(f"--> [SUCCESS] Market data received for SPY. Last price: {ticker.last}")
+            data_type = "Delayed" if is_delayed_attempt else "Live"
+            log.info(f"--> [SUCCESS] {data_type} market data received for AAPL. Last price: {ticker.last}")
         else:
             all_checks_passed = False
-            log.error("--> [FAIL] Did not receive market data for SPY. Check market data subscriptions.")
+            log.error("--> [FAIL] Did not receive market data for AAPL. Check market data subscriptions.")
+            log.error("    - This usually means you lack market data subscriptions for US Equities.")
+            log.error("    - For paper accounts, you may need to subscribe in Account Management.")
 
+        ib.cancelMktData(aapl_contract)
         # 5. Order Trading Check
         log.info("5. Performing a 'What-If' order check to verify trading setup...")
         what_if_contract = Stock('AAPL', 'SMART', 'USD')
