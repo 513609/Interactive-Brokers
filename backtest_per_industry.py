@@ -199,18 +199,24 @@ def plot_all_results(all_portfolios, initial_capital):
     """
     plt.style.use('seaborn-v0_8-darkgrid')
     plt.figure(figsize=(16, 9))
-    
+
+    master_index = pd.DatetimeIndex([])
+    for df in all_portfolios.values():
+        master_index = master_index.union(df.index)
+    master_index = master_index.sort_values()
+
     # --- Plot SPY Benchmark ---
     try:
         spy_data = pd.read_csv('data/historical_data/SPY_data.csv', index_col='date', parse_dates=True)
-        # Use the union of all portfolio indices to align SPY data correctly
-        master_index = pd.DatetimeIndex([])
-        for df in all_portfolios.values():
-            master_index = master_index.union(df.index)
+        spy_data = spy_data.reindex(master_index, method='ffill')
         
-        spy_data = spy_data.reindex(master_index.sort_values(), method='ffill')
-        spy_equity = (spy_data['close'] / spy_data['close'].iloc[0]) * initial_capital
-        plt.plot(spy_equity.index, spy_equity, label='SPY (Buy & Hold)', color='black', linestyle='--', linewidth=2)
+        # Ensure SPY data is not all NaN after reindexing
+        if not spy_data['close'].dropna().empty:
+            spy_equity = (spy_data['close'] / spy_data['close'].dropna().iloc[0]) * initial_capital
+            plt.plot(spy_equity.index, spy_equity, label='SPY (Buy & Hold)', color='black', linestyle='--', linewidth=2)
+        else:
+            print("\nWarning: SPY data could not be aligned with portfolio dates. Skipping benchmark plot.")
+            
     except FileNotFoundError:
         print("\nSPY_data.csv not found. Skipping benchmark plot.")
 
@@ -245,9 +251,15 @@ def plot_top_performers(top_portfolios, initial_capital):
         for df in top_portfolios.values():
             master_index = master_index.union(df.index)
 
-        spy_data = spy_data.reindex(master_index.sort_values(), method='ffill')
-        spy_equity = (spy_data['close'] / spy_data['close'].iloc[0]) * initial_capital
-        plt.plot(spy_equity.index, spy_equity, label='SPY (Buy & Hold)', color='black', linestyle='--', linewidth=2)
+        spy_data = spy_data.reindex(master_index.sort_values(), method='ffill').dropna()
+        
+        # Ensure SPY data is not all NaN after reindexing and dropping NaNs
+        if not spy_data.empty:
+            spy_equity = (spy_data['close'] / spy_data['close'].iloc[0]) * initial_capital
+            plt.plot(spy_equity.index, spy_equity, label='SPY (Buy & Hold)', color='black', linestyle='--', linewidth=2)
+        else:
+            print("\nWarning: SPY data could not be aligned with top performer dates. Skipping benchmark plot.")
+
     except FileNotFoundError:
         print("\nSPY_data.csv not found. Skipping benchmark plot for top performers graph.")
 
