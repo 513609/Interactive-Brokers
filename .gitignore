@@ -8,9 +8,10 @@ venv/
 # VS Code
 .vscode/
 
-# Environment variables - VERY IMPORTANT
-.env
-
-# Data & Logs
-data/
+# Log files & Data
+# Keep data out of git if it's large. For this project, it's okay to track it.
+logs/
 *.log
+
+# Environment variables (just in case you add them later)
+.env
