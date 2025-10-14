@@ -1,0 +1,32 @@
+# ==================================================
+#       ROBUST BACKTESTING ENGINE CONFIGURATION
+# ==================================================
+
+# --- Backtest Settings ---
+backtest:
+    initial_capital: 100000.0
+    start_date: '2023-01-01'
+    end_date: '2025-10-01'
+    symbols: 
+        - 'AAPL'
+    benchmark_symbol: 'SPY' # Used for performance comparison
+
+# --- Realism Settings ---
+execution:
+    commission_per_trade: 0.50   # Flat fee per buy or sell order
+    bid_ask_spread_percent: 0.0005 # Simulates spread (0.05%)
+    slippage_percent: 0.001        # Simulates price movement on execution (0.1%)
+
+# --- Strategy Settings ---
+# Settings specific to the strategy being tested can be placed here.
+strategy:
+    name: 'SmaCrossoverStrategy'
+    parameters:
+        short_window: 20
+        long_window: 50
+        capital_per_trade_percent: 0.10 # Allocate 10% of portfolio value per trade
+
+# --- Logging Settings ---
+logging:
+    level: 'INFO' # Can be 'DEBUG', 'INFO', 'WARNING', 'ERROR'
+    file: 'logs/backtest.log'

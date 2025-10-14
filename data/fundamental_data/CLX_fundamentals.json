@@ -1,0 +1,1583 @@
+{
+    "info": {
+        "address1": "1221 Broadway",
+        "city": "Oakland",
+        "state": "CA",
+        "zip": "94612-1888",
+        "country": "United States",
+        "phone": "510 271 7000",
+        "website": "https://www.thecloroxcompany.com",
+        "industry": "Household & Personal Products",
+        "industryKey": "household-personal-products",
+        "industryDisp": "Household & Personal Products",
+        "sector": "Consumer Defensive",
+        "sectorKey": "consumer-defensive",
+        "sectorDisp": "Consumer Defensive",
+        "longBusinessSummary": "The Clorox Company manufactures and markets consumer and professional products worldwide. The company operates through four segments: Health and Wellness, Household, Lifestyle, and International. The Health and Wellness segment offers home care cleaning and disinfecting products, bleach, clog removers, and laundry additives under the Clorox, Clorox2, Pine-Sol, Scentiva, Tilex, Liquid-Plumr, Poett, and Formula 409 brands; professional cleaning and disinfecting products under the CloroxPro and Clorox Healthcare brands; professional food service products under the Hidden Valley brand in the United States. The Household segment provides cat litter products under the Fresh Step and Scoop Away brands; bags and wraps under the Glad brand; and grilling products under the Kingsford brand in the United States. The Lifestyle segment offers dressings, dips, seasonings, and sauces primarily under the Hidden Valley brand; water-filtration products under the Brita brand; and natural personal care products under the Burt's Bees brand in the United States. The International segment provides laundry additives, home care products, bags and wraps, cat litter products, water-filtration systems, professional cleaning and disinfecting products, natural personal care products, food, grilling products, and digestive health products internationally primarily under the Clorox, Glad, Poett, Brita, Burt's Bees, Pine-Sol, Ever Clean, Clorinda, Chux and Fresh Step Brands. It also offers vitamins, minerals, and supplement products under the Natural Vitality, RenewLife, NeoCell, and Rainbow Light brands. The company sells its products through mass retailers; grocery outlets; warehouse clubs; dollar stores; home hardware centers; drug, pet, and military stores; third-party and owned e-commerce channels; and distributors, as well as a direct sales force. The company was founded in 1913 and is headquartered in Oakland, California.",
+        "fullTimeEmployees": 7600,
+        "companyOfficers": [
+            {
+                "maxAge": 1,
+                "name": "Ms. Linda J. Rendle",
+                "age": 46,
+                "title": "CEO & Chairman",
+                "yearBorn": 1978,
+                "fiscalYear": 2025,
+                "totalPay": 3578279,
+                "exercisedValue": 1380606,
+                "unexercisedValue": 0
+            },
+            {
+                "maxAge": 1,
+                "name": "Ms. Laura E. Peck",
+                "age": 47,
+                "title": "VP, Chief Accounting Officer & Corporate Controller",
+                "yearBorn": 1977,
+                "fiscalYear": 2025,
+                "exercisedValue": 0,
+                "unexercisedValue": 0
+            },
+            {
+                "maxAge": 1,
+                "name": "Ms. Chau  Banks",
+                "age": 55,
+                "title": "Senior VP and Chief Information & Data Officer",
+                "yearBorn": 1969,
+                "fiscalYear": 2025,
+                "exercisedValue": 0,
+                "unexercisedValue": 0
+            },
+            {
+                "maxAge": 1,
+                "name": "Mr. Pascal  Montilus",
+                "age": 60,
+                "title": "Senior VP & Chief Supply Chain Officer",
+                "yearBorn": 1964,
+                "fiscalYear": 2025,
+                "exercisedValue": 0,
+                "unexercisedValue": 0
+            }
+        ],
+        "auditRisk": 8,
+        "boardRisk": 3,
+        "compensationRisk": 5,
+        "shareHolderRightsRisk": 8,
+        "overallRisk": 6,
+        "governanceEpochDate": 1759276800,
+        "compensationAsOfEpochDate": 1767139200,
+        "irWebsite": "http://investors.thecloroxcompany.com/",
+        "executiveTeam": [],
+        "maxAge": 86400,
+        "priceHint": 2,
+        "previousClose": 119.59,
+        "open": 119.59,
+        "dayLow": 119.25,
+        "dayHigh": 120.065,
+        "regularMarketPreviousClose": 119.59,
+        "regularMarketOpen": 119.59,
+        "regularMarketDayLow": 119.25,
+        "regularMarketDayHigh": 120.065,
+        "dividendRate": 4.96,
+        "dividendYield": 4.15,
+        "exDividendDate": 1761091200,
+        "payoutRatio": 0.7485,
+        "fiveYearAvgDividendYield": 3.08,
+        "beta": 0.515,
+        "trailingPE": 18.361963,
+        "forwardPE": 16.422497,
+        "volume": 681140,
+        "regularMarketVolume": 681140,
+        "averageVolume": 1857465,
+        "averageVolume10days": 1695520,
+        "averageDailyVolume10Day": 1695520,
+        "bid": 119.69,
+        "ask": 119.74,
+        "bidSize": 1,
+        "askSize": 2,
+        "marketCap": 14578733056,
+        "fiftyTwoWeekLow": 116.53,
+        "fiftyTwoWeekHigh": 171.37,
+        "allTimeHigh": 239.87,
+        "allTimeLow": 0.6875,
+        "priceToSalesTrailing12Months": 2.0521865,
+        "fiftyDayAverage": 122.5222,
+        "twoHundredDayAverage": 137.0513,
+        "trailingAnnualDividendRate": 4.9,
+        "trailingAnnualDividendYield": 0.040973328,
+        "currency": "USD",
+        "tradeable": false,
+        "enterpriseValue": 17536983040,
+        "profitMargins": 0.114020005,
+        "floatShares": 121960832,
+        "sharesOutstanding": 121773579,
+        "sharesShort": 7398292,
+        "sharesShortPriorMonth": 6785896,
+        "sharesShortPreviousMonthDate": 1755216000,
+        "dateShortInterest": 1757894400,
+        "sharesPercentSharesOut": 0.060500003,
+        "heldPercentInsiders": 0.00603,
+        "heldPercentInstitutions": 0.91436994,
+        "shortRatio": 3.98,
+        "shortPercentOfFloat": 0.0691,
+        "impliedSharesOutstanding": 122309414,
+        "bookValue": 2.616,
+        "priceToBook": 45.764526,
+        "lastFiscalYearEnd": 1751241600,
+        "nextFiscalYearEnd": 1782777600,
+        "mostRecentQuarter": 1751241600,
+        "earningsQuarterlyGrowth": 0.537,
+        "netIncomeToCommon": 810000000,
+        "trailingEps": 6.52,
+        "forwardEps": 7.29,
+        "lastSplitFactor": "2:1",
+        "lastSplitDate": 935452800,
+        "enterpriseToRevenue": 2.469,
+        "enterpriseToEbitda": 12.553,
+        "52WeekChange": -0.24334073,
+        "SandP52WeekChange": 0.16845357,
+        "lastDividendValue": 1.24,
+        "lastDividendDate": 1755043200,
+        "quoteType": "EQUITY",
+        "currentPrice": 119.72,
+        "targetHighPrice": 166.0,
+        "targetLowPrice": 110.0,
+        "targetMeanPrice": 131.23529,
+        "targetMedianPrice": 130.0,
+        "recommendationMean": 3.15789,
+        "recommendationKey": "hold",
+        "numberOfAnalystOpinions": 17,
+        "totalCash": 167000000,
+        "totalCashPerShare": 1.365,
+        "ebitda": 1396999936,
+        "totalDebt": 2916000000,
+        "quickRatio": 0.515,
+        "currentRatio": 0.838,
+        "totalRevenue": 7104000000,
+        "debtToEquity": 604.979,
+        "revenuePerShare": 57.511,
+        "returnOnAssets": 0.13095,
+        "returnOnEquity": 1.69199,
+        "grossProfits": 3208000000,
+        "freeCashflow": 1084625024,
+        "operatingCashflow": 981000000,
+        "earningsGrowth": 0.555,
+        "revenueGrowth": 0.045,
+        "grossMargins": 0.45158002,
+        "ebitdaMargins": 0.19665001,
+        "operatingMargins": 0.20976,
+        "financialCurrency": "USD",
+        "symbol": "CLX",
+        "language": "en-US",
+        "region": "US",
+        "typeDisp": "Equity",
+        "quoteSourceName": "Nasdaq Real Time Price",
+        "triggerable": true,
+        "customPriceAlertConfidence": "HIGH",
+        "exchange": "NYQ",
+        "messageBoardId": "finmb_89450",
+        "exchangeTimezoneName": "America/New_York",
+        "exchangeTimezoneShortName": "EDT",
+        "gmtOffSetMilliseconds": -14400000,
+        "shortName": "Clorox Company (The)",
+        "market": "us_market",
+        "esgPopulated": false,
+        "corporateActions": [
+            {
+                "header": "Dividend",
+                "message": "CLX announced a cash dividend of 1.24 with an ex-date of Oct. 22, 2025",
+                "meta": {
+                    "eventType": "DIVIDEND",
+                    "dateEpochMs": 1761105600000,
+                    "amount": "1.24"
+                }
+            }
+        ],
+        "regularMarketTime": 1760036676,
+        "marketState": "REGULAR",
+        "longName": "The Clorox Company",
+        "regularMarketChangePercent": 0.10870883,
+        "regularMarketPrice": 119.72,
+        "epsTrailingTwelveMonths": 6.52,
+        "epsForward": 7.29,
+        "epsCurrentYear": 5.99174,
+        "priceEpsCurrentYear": 19.98084,
+        "fiftyDayAverageChange": -2.8022003,
+        "fiftyDayAverageChangePercent": -0.02287096,
+        "twoHundredDayAverageChange": -17.331299,
+        "twoHundredDayAverageChangePercent": -0.12645848,
+        "sourceInterval": 15,
+        "exchangeDataDelayedBy": 0,
+        "averageAnalystRating": "3.2 - Hold",
+        "cryptoTradeable": false,
+        "hasPrePostMarketData": true,
+        "firstTradeDateMilliseconds": 99153000000,
+        "regularMarketChange": 0.13000488,
+        "regularMarketDayRange": "119.25 - 120.065",
+        "fullExchangeName": "NYSE",
+        "averageDailyVolume3Month": 1857465,
+        "fiftyTwoWeekLowChange": 3.1900024,
+        "fiftyTwoWeekLowChangePercent": 0.027374946,
+        "fiftyTwoWeekRange": "116.53 - 171.37",
+        "fiftyTwoWeekHighChange": -51.649994,
+        "fiftyTwoWeekHighChangePercent": -0.3013946,
+        "fiftyTwoWeekChangePercent": -24.334072,
+        "dividendDate": 1762387200,
+        "earningsTimestamp": 1753992000,
+        "earningsTimestampStart": 1761854400,
+        "earningsTimestampEnd": 1761854400,
+        "earningsCallTimestampStart": 1753995600,
+        "earningsCallTimestampEnd": 1753995600,
+        "isEarningsDateEstimate": true,
+        "trailingPegRatio": 3.4454
+    },
+    "income_statement": {
+        "Tax Effect Of Unusual Items": {
+            "2025-06-30": -8732000.0,
+            "2024-06-30": -64925000.0,
+            "2023-06-30": -160470588.235294,
+            "2022-06-30": -2240000.0,
+            "2021-06-30": NaN
+        },
+        "Tax Rate For Calcs": {
+            "2025-06-30": 0.236,
+            "2024-06-30": 0.265,
+            "2023-06-30": 0.323529,
+            "2022-06-30": 0.224,
+            "2021-06-30": NaN
+        },
+        "Normalized EBITDA": {
+            "2025-06-30": 1422000000.0,
+            "2024-06-30": 968000000.0,
+            "2023-06-30": 1060000000.0,
+            "2022-06-30": 947000000.0,
+            "2021-06-30": NaN
+        },
+        "Total Unusual Items": {
+            "2025-06-30": -37000000.0,
+            "2024-06-30": -245000000.0,
+            "2023-06-30": -496000000.0,
+            "2022-06-30": -10000000.0,
+            "2021-06-30": NaN
+        },
+        "Total Unusual Items Excluding Goodwill": {
+            "2025-06-30": -37000000.0,
+            "2024-06-30": -245000000.0,
+            "2023-06-30": -496000000.0,
+            "2022-06-30": -10000000.0,
+            "2021-06-30": NaN
+        },
+        "Net Income From Continuing Operation Net Minority Interest": {
+            "2025-06-30": 810000000.0,
+            "2024-06-30": 280000000.0,
+            "2023-06-30": 149000000.0,
+            "2022-06-30": 462000000.0,
+            "2021-06-30": NaN
+        },
+        "Reconciled Depreciation": {
+            "2025-06-30": 219000000.0,
+            "2024-06-30": 235000000.0,
+            "2023-06-30": 236000000.0,
+            "2022-06-30": 224000000.0,
+            "2021-06-30": NaN
+        },
+        "Reconciled Cost Of Revenue": {
+            "2025-06-30": 3693000000.0,
+            "2024-06-30": 3839000000.0,
+            "2023-06-30": 4275000000.0,
+            "2022-06-30": 4369000000.0,
+            "2021-06-30": NaN
+        },
+        "EBITDA": {
+            "2025-06-30": 1385000000.0,
+            "2024-06-30": 723000000.0,
+            "2023-06-30": 564000000.0,
+            "2022-06-30": 937000000.0,
+            "2021-06-30": NaN
+        },
+        "EBIT": {
+            "2025-06-30": 1166000000.0,
+            "2024-06-30": 488000000.0,
+            "2023-06-30": 328000000.0,
+            "2022-06-30": 713000000.0,
+            "2021-06-30": NaN
+        },
+        "Net Interest Income": {
+            "2025-06-30": -79000000.0,
+            "2024-06-30": -67000000.0,
+            "2023-06-30": -74000000.0,
+            "2022-06-30": -101000000.0,
+            "2021-06-30": NaN
+        },
+        "Interest Expense": {
+            "2025-06-30": 88000000.0,
+            "2024-06-30": 90000000.0,
+            "2023-06-30": 90000000.0,
+            "2022-06-30": 106000000.0,
+            "2021-06-30": NaN
+        },
+        "Interest Income": {
+            "2025-06-30": 9000000.0,
+            "2024-06-30": 23000000.0,
+            "2023-06-30": 16000000.0,
+            "2022-06-30": 5000000.0,
+            "2021-06-30": NaN
+        },
+        "Normalized Income": {
+            "2025-06-30": 838268000.0,
+            "2024-06-30": 460075000.0,
+            "2023-06-30": 484529411.764706,
+            "2022-06-30": 469760000.0,
+            "2021-06-30": NaN
+        },
+        "Net Income From Continuing And Discontinued Operation": {
+            "2025-06-30": 810000000.0,
+            "2024-06-30": 280000000.0,
+            "2023-06-30": 149000000.0,
+            "2022-06-30": 462000000.0,
+            "2021-06-30": NaN
+        },
+        "Total Expenses": {
+            "2025-06-30": 5927000000.0,
+            "2024-06-30": 6370000000.0,
+            "2023-06-30": 6566000000.0,
+            "2022-06-30": 6388000000.0,
+            "2021-06-30": NaN
+        },
+        "Diluted Average Shares": {
+            "2025-06-30": NaN,
+            "2024-06-30": 124804000.0,
+            "2023-06-30": 124181000.0,
+            "2022-06-30": 123906000.0,
+            "2021-06-30": 127299000.0
+        },
+        "Basic Average Shares": {
+            "2025-06-30": NaN,
+            "2024-06-30": 124174000.0,
+            "2023-06-30": 123589000.0,
+            "2022-06-30": 123113000.0,
+            "2021-06-30": 125570000.0
+        },
+        "Diluted EPS": {
+            "2025-06-30": NaN,
+            "2024-06-30": 2.25,
+            "2023-06-30": 1.2,
+            "2022-06-30": 3.73,
+            "2021-06-30": 5.58
+        },
+        "Basic EPS": {
+            "2025-06-30": NaN,
+            "2024-06-30": 2.26,
+            "2023-06-30": 1.21,
+            "2022-06-30": 3.75,
+            "2021-06-30": 5.66
+        },
+        "Diluted NI Availto Com Stockholders": {
+            "2025-06-30": 810000000.0,
+            "2024-06-30": 280000000.0,
+            "2023-06-30": 149000000.0,
+            "2022-06-30": 462000000.0,
+            "2021-06-30": NaN
+        },
+        "Net Income Common Stockholders": {
+            "2025-06-30": 810000000.0,
+            "2024-06-30": 280000000.0,
+            "2023-06-30": 149000000.0,
+            "2022-06-30": 462000000.0,
+            "2021-06-30": NaN
+        },
+        "Net Income": {
+            "2025-06-30": 810000000.0,
+            "2024-06-30": 280000000.0,
+            "2023-06-30": 149000000.0,
+            "2022-06-30": 462000000.0,
+            "2021-06-30": NaN
+        },
+        "Minority Interests": {
+            "2025-06-30": -14000000.0,
+            "2024-06-30": -12000000.0,
+            "2023-06-30": -12000000.0,
+            "2022-06-30": -9000000.0,
+            "2021-06-30": NaN
+        },
+        "Net Income Including Noncontrolling Interests": {
+            "2025-06-30": 824000000.0,
+            "2024-06-30": 292000000.0,
+            "2023-06-30": 161000000.0,
+            "2022-06-30": 471000000.0,
+            "2021-06-30": NaN
+        },
+        "Net Income Continuous Operations": {
+            "2025-06-30": 824000000.0,
+            "2024-06-30": 292000000.0,
+            "2023-06-30": 161000000.0,
+            "2022-06-30": 471000000.0,
+            "2021-06-30": NaN
+        },
+        "Tax Provision": {
+            "2025-06-30": 254000000.0,
+            "2024-06-30": 106000000.0,
+            "2023-06-30": 77000000.0,
+            "2022-06-30": 136000000.0,
+            "2021-06-30": NaN
+        },
+        "Pretax Income": {
+            "2025-06-30": 1078000000.0,
+            "2024-06-30": 398000000.0,
+            "2023-06-30": 238000000.0,
+            "2022-06-30": 607000000.0,
+            "2021-06-30": NaN
+        },
+        "Other Income Expense": {
+            "2025-06-30": -20000000.0,
+            "2024-06-30": -258000000.0,
+            "2023-06-30": -511000000.0,
+            "2022-06-30": -11000000.0,
+            "2021-06-30": NaN
+        },
+        "Other Non Operating Income Expenses": {
+            "2025-06-30": 13000000.0,
+            "2024-06-30": -18000000.0,
+            "2023-06-30": -19000000.0,
+            "2022-06-30": -7000000.0,
+            "2021-06-30": NaN
+        },
+        "Special Income Charges": {
+            "2025-06-30": -53000000.0,
+            "2024-06-30": -240000000.0,
+            "2023-06-30": -497000000.0,
+            "2022-06-30": 14000000.0,
+            "2021-06-30": NaN
+        },
+        "Gain On Sale Of Ppe": {
+            "2025-06-30": 0.0,
+            "2024-06-30": 16000000.0,
+            "2023-06-30": 0.0,
+            "2022-06-30": 14000000.0,
+            "2021-06-30": NaN
+        },
+        "Gain On Sale Of Business": {
+            "2025-06-30": -118000000.0,
+            "2024-06-30": -240000000.0,
+            "2023-06-30": 0.0,
+            "2022-06-30": 0.0,
+            "2021-06-30": NaN
+        },
+        "Other Special Charges": {
+            "2025-06-30": -65000000.0,
+            "2024-06-30": 171000000.0,
+            "2023-06-30": NaN,
+            "2022-06-30": NaN,
+            "2021-06-30": NaN
+        },
+        "Impairment Of Capital Assets": {
+            "2025-06-30": 0.0,
+            "2024-06-30": 0.0,
+            "2023-06-30": 445000000.0,
+            "2022-06-30": 0.0,
+            "2021-06-30": NaN
+        },
+        "Restructuring And Mergern Acquisition": {
+            "2025-06-30": 0.0,
+            "2024-06-30": 16000000.0,
+            "2023-06-30": 52000000.0,
+            "2022-06-30": 0.0,
+            "2021-06-30": NaN
+        },
+        "Earnings From Equity Interest": {
+            "2025-06-30": 4000000.0,
+            "2024-06-30": 5000000.0,
+            "2023-06-30": 4000000.0,
+            "2022-06-30": 6000000.0,
+            "2021-06-30": NaN
+        },
+        "Gain On Sale Of Security": {
+            "2025-06-30": 16000000.0,
+            "2024-06-30": -5000000.0,
+            "2023-06-30": 1000000.0,
+            "2022-06-30": -24000000.0,
+            "2021-06-30": NaN
+        },
+        "Net Non Operating Interest Income Expense": {
+            "2025-06-30": -79000000.0,
+            "2024-06-30": -67000000.0,
+            "2023-06-30": -74000000.0,
+            "2022-06-30": -101000000.0,
+            "2021-06-30": NaN
+        },
+        "Interest Expense Non Operating": {
+            "2025-06-30": 88000000.0,
+            "2024-06-30": 90000000.0,
+            "2023-06-30": 90000000.0,
+            "2022-06-30": 106000000.0,
+            "2021-06-30": NaN
+        },
+        "Interest Income Non Operating": {
+            "2025-06-30": 9000000.0,
+            "2024-06-30": 23000000.0,
+            "2023-06-30": 16000000.0,
+            "2022-06-30": 5000000.0,
+            "2021-06-30": NaN
+        },
+        "Operating Income": {
+            "2025-06-30": 1177000000.0,
+            "2024-06-30": 723000000.0,
+            "2023-06-30": 823000000.0,
+            "2022-06-30": 719000000.0,
+            "2021-06-30": NaN
+        },
+        "Operating Expense": {
+            "2025-06-30": 2036000000.0,
+            "2024-06-30": 2325000000.0,
+            "2023-06-30": 2085000000.0,
+            "2022-06-30": 1826000000.0,
+            "2021-06-30": NaN
+        },
+        "Other Operating Expenses": {
+            "2025-06-30": NaN,
+            "2024-06-30": NaN,
+            "2023-06-30": NaN,
+            "2022-06-30": -14000000.0,
+            "2021-06-30": NaN
+        },
+        "Depreciation Amortization Depletion Income Statement": {
+            "2025-06-30": 21000000.0,
+            "2024-06-30": 29000000.0,
+            "2023-06-30": 30000000.0,
+            "2022-06-30": 31000000.0,
+            "2021-06-30": NaN
+        },
+        "Depreciation And Amortization In Income Statement": {
+            "2025-06-30": 21000000.0,
+            "2024-06-30": 29000000.0,
+            "2023-06-30": 30000000.0,
+            "2022-06-30": 31000000.0,
+            "2021-06-30": NaN
+        },
+        "Amortization": {
+            "2025-06-30": 21000000.0,
+            "2024-06-30": 29000000.0,
+            "2023-06-30": 30000000.0,
+            "2022-06-30": 31000000.0,
+            "2021-06-30": NaN
+        },
+        "Amortization Of Intangibles Income Statement": {
+            "2025-06-30": 21000000.0,
+            "2024-06-30": 29000000.0,
+            "2023-06-30": 30000000.0,
+            "2022-06-30": 31000000.0,
+            "2021-06-30": NaN
+        },
+        "Research And Development": {
+            "2025-06-30": 121000000.0,
+            "2024-06-30": 126000000.0,
+            "2023-06-30": 138000000.0,
+            "2022-06-30": 132000000.0,
+            "2021-06-30": NaN
+        },
+        "Selling General And Administration": {
+            "2025-06-30": 1894000000.0,
+            "2024-06-30": 2170000000.0,
+            "2023-06-30": 1917000000.0,
+            "2022-06-30": 1663000000.0,
+            "2021-06-30": NaN
+        },
+        "Selling And Marketing Expense": {
+            "2025-06-30": 770000000.0,
+            "2024-06-30": 832000000.0,
+            "2023-06-30": 734000000.0,
+            "2022-06-30": 709000000.0,
+            "2021-06-30": NaN
+        },
+        "General And Administrative Expense": {
+            "2025-06-30": 1124000000.0,
+            "2024-06-30": 1338000000.0,
+            "2023-06-30": 1183000000.0,
+            "2022-06-30": 954000000.0,
+            "2021-06-30": NaN
+        },
+        "Other Gand A": {
+            "2025-06-30": 1124000000.0,
+            "2024-06-30": 1167000000.0,
+            "2023-06-30": 1183000000.0,
+            "2022-06-30": 954000000.0,
+            "2021-06-30": NaN
+        },
+        "Salaries And Wages": {
+            "2025-06-30": 0.0,
+            "2024-06-30": 171000000.0,
+            "2023-06-30": 0.0,
+            "2022-06-30": 0.0,
+            "2021-06-30": NaN
+        },
+        "Gross Profit": {
+            "2025-06-30": 3213000000.0,
+            "2024-06-30": 3048000000.0,
+            "2023-06-30": 2908000000.0,
+            "2022-06-30": 2545000000.0,
+            "2021-06-30": NaN
+        },
+        "Cost Of Revenue": {
+            "2025-06-30": 3891000000.0,
+            "2024-06-30": 4045000000.0,
+            "2023-06-30": 4481000000.0,
+            "2022-06-30": 4562000000.0,
+            "2021-06-30": NaN
+        },
+        "Total Revenue": {
+            "2025-06-30": 7104000000.0,
+            "2024-06-30": 7093000000.0,
+            "2023-06-30": 7389000000.0,
+            "2022-06-30": 7107000000.0,
+            "2021-06-30": NaN
+        },
+        "Operating Revenue": {
+            "2025-06-30": 7104000000.0,
+            "2024-06-30": 7093000000.0,
+            "2023-06-30": 7389000000.0,
+            "2022-06-30": 7107000000.0,
+            "2021-06-30": NaN
+        }
+    },
+    "balance_sheet": {
+        "Treasury Shares Number": {
+            "2025-06-30": 8047198.0,
+            "2024-06-30": 6539654.0,
+            "2023-06-30": 6921439.0,
+            "2022-06-30": 7589329.0,
+            "2021-06-30": NaN
+        },
+        "Ordinary Shares Number": {
+            "2025-06-30": 122694263.0,
+            "2024-06-30": 124201807.0,
+            "2023-06-30": 123820022.0,
+            "2022-06-30": 123152132.0,
+            "2021-06-30": NaN
+        },
+        "Share Issued": {
+            "2025-06-30": 130741461.0,
+            "2024-06-30": 130741461.0,
+            "2023-06-30": 130741461.0,
+            "2022-06-30": 130741461.0,
+            "2021-06-30": NaN
+        },
+        "Net Debt": {
+            "2025-06-30": 2321000000.0,
+            "2024-06-30": 2283000000.0,
+            "2023-06-30": 2160000000.0,
+            "2022-06-30": 2528000000.0,
+            "2021-06-30": NaN
+        },
+        "Total Debt": {
+            "2025-06-30": 2880000000.0,
+            "2024-06-30": 2903000000.0,
+            "2023-06-30": 2924000000.0,
+            "2022-06-30": 3103000000.0,
+            "2021-06-30": NaN
+        },
+        "Tangible Book Value": {
+            "2025-06-30": -1474000000.0,
+            "2024-06-30": -1581000000.0,
+            "2023-06-30": -1744000000.0,
+            "2022-06-30": -1886000000.0,
+            "2021-06-30": NaN
+        },
+        "Invested Capital": {
+            "2025-06-30": 2809000000.0,
+            "2024-06-30": 2813000000.0,
+            "2023-06-30": 2747000000.0,
+            "2022-06-30": 3267000000.0,
+            "2021-06-30": NaN
+        },
+        "Working Capital": {
+            "2025-06-30": -311000000.0,
+            "2024-06-30": 48000000.0,
+            "2023-06-30": -89000000.0,
+            "2022-06-30": -59000000.0,
+            "2021-06-30": NaN
+        },
+        "Net Tangible Assets": {
+            "2025-06-30": -1474000000.0,
+            "2024-06-30": -1581000000.0,
+            "2023-06-30": -1744000000.0,
+            "2022-06-30": -1886000000.0,
+            "2021-06-30": NaN
+        },
+        "Capital Lease Obligations": {
+            "2025-06-30": 392000000.0,
+            "2024-06-30": 418000000.0,
+            "2023-06-30": 397000000.0,
+            "2022-06-30": 392000000.0,
+            "2021-06-30": NaN
+        },
+        "Common Stock Equity": {
+            "2025-06-30": 321000000.0,
+            "2024-06-30": 328000000.0,
+            "2023-06-30": 220000000.0,
+            "2022-06-30": 556000000.0,
+            "2021-06-30": NaN
+        },
+        "Total Capitalization": {
+            "2025-06-30": 2805000000.0,
+            "2024-06-30": 2809000000.0,
+            "2023-06-30": 2697000000.0,
+            "2022-06-30": 3030000000.0,
+            "2021-06-30": NaN
+        },
+        "Total Equity Gross Minority Interest": {
+            "2025-06-30": 482000000.0,
+            "2024-06-30": 492000000.0,
+            "2023-06-30": 388000000.0,
+            "2022-06-30": 729000000.0,
+            "2021-06-30": NaN
+        },
+        "Minority Interest": {
+            "2025-06-30": 161000000.0,
+            "2024-06-30": 164000000.0,
+            "2023-06-30": 168000000.0,
+            "2022-06-30": 173000000.0,
+            "2021-06-30": NaN
+        },
+        "Stockholders Equity": {
+            "2025-06-30": 321000000.0,
+            "2024-06-30": 328000000.0,
+            "2023-06-30": 220000000.0,
+            "2022-06-30": 556000000.0,
+            "2021-06-30": NaN
+        },
+        "Gains Losses Not Affecting Retained Earnings": {
+            "2025-06-30": -157000000.0,
+            "2024-06-30": -155000000.0,
+            "2023-06-30": -493000000.0,
+            "2022-06-30": -479000000.0,
+            "2021-06-30": NaN
+        },
+        "Other Equity Adjustments": {
+            "2025-06-30": -157000000.0,
+            "2024-06-30": -155000000.0,
+            "2023-06-30": -493000000.0,
+            "2022-06-30": -479000000.0,
+            "2021-06-30": NaN
+        },
+        "Treasury Stock": {
+            "2025-06-30": 1404000000.0,
+            "2024-06-30": 1186000000.0,
+            "2023-06-30": 1246000000.0,
+            "2022-06-30": 1346000000.0,
+            "2021-06-30": NaN
+        },
+        "Retained Earnings": {
+            "2025-06-30": 432000000.0,
+            "2024-06-30": 250000000.0,
+            "2023-06-30": 583000000.0,
+            "2022-06-30": 1048000000.0,
+            "2021-06-30": NaN
+        },
+        "Additional Paid In Capital": {
+            "2025-06-30": 1319000000.0,
+            "2024-06-30": 1288000000.0,
+            "2023-06-30": 1245000000.0,
+            "2022-06-30": 1202000000.0,
+            "2021-06-30": NaN
+        },
+        "Capital Stock": {
+            "2025-06-30": 131000000.0,
+            "2024-06-30": 131000000.0,
+            "2023-06-30": 131000000.0,
+            "2022-06-30": 131000000.0,
+            "2021-06-30": NaN
+        },
+        "Common Stock": {
+            "2025-06-30": 131000000.0,
+            "2024-06-30": 131000000.0,
+            "2023-06-30": 131000000.0,
+            "2022-06-30": 131000000.0,
+            "2021-06-30": NaN
+        },
+        "Preferred Stock": {
+            "2025-06-30": 0.0,
+            "2024-06-30": 0.0,
+            "2023-06-30": 0.0,
+            "2022-06-30": 0.0,
+            "2021-06-30": NaN
+        },
+        "Total Liabilities Net Minority Interest": {
+            "2025-06-30": 5079000000.0,
+            "2024-06-30": 5259000000.0,
+            "2023-06-30": 5557000000.0,
+            "2022-06-30": 5429000000.0,
+            "2021-06-30": NaN
+        },
+        "Total Non Current Liabilities Net Minority Interest": {
+            "2025-06-30": 3160000000.0,
+            "2024-06-30": 3685000000.0,
+            "2023-06-30": 3640000000.0,
+            "2022-06-30": 3645000000.0,
+            "2021-06-30": NaN
+        },
+        "Other Non Current Liabilities": {
+            "2025-06-30": 28000000.0,
+            "2024-06-30": 536000000.0,
+            "2023-06-30": 523000000.0,
+            "2022-06-30": 486000000.0,
+            "2021-06-30": NaN
+        },
+        "Employee Benefits": {
+            "2025-06-30": 267000000.0,
+            "2024-06-30": 263000000.0,
+            "2023-06-30": 259000000.0,
+            "2022-06-30": 263000000.0,
+            "2021-06-30": NaN
+        },
+        "Tradeand Other Payables Non Current": {
+            "2025-06-30": 31000000.0,
+            "2024-06-30": 25000000.0,
+            "2023-06-30": 19000000.0,
+            "2022-06-30": 19000000.0,
+            "2021-06-30": NaN
+        },
+        "Non Current Deferred Liabilities": {
+            "2025-06-30": 20000000.0,
+            "2024-06-30": 22000000.0,
+            "2023-06-30": 28000000.0,
+            "2022-06-30": 66000000.0,
+            "2021-06-30": NaN
+        },
+        "Non Current Deferred Taxes Liabilities": {
+            "2025-06-30": 20000000.0,
+            "2024-06-30": 22000000.0,
+            "2023-06-30": 28000000.0,
+            "2022-06-30": 66000000.0,
+            "2021-06-30": NaN
+        },
+        "Long Term Debt And Capital Lease Obligation": {
+            "2025-06-30": 2789000000.0,
+            "2024-06-30": 2815000000.0,
+            "2023-06-30": 2787000000.0,
+            "2022-06-30": 2788000000.0,
+            "2021-06-30": NaN
+        },
+        "Long Term Capital Lease Obligation": {
+            "2025-06-30": 305000000.0,
+            "2024-06-30": 334000000.0,
+            "2023-06-30": 310000000.0,
+            "2022-06-30": 314000000.0,
+            "2021-06-30": NaN
+        },
+        "Long Term Debt": {
+            "2025-06-30": 2484000000.0,
+            "2024-06-30": 2481000000.0,
+            "2023-06-30": 2477000000.0,
+            "2022-06-30": 2474000000.0,
+            "2021-06-30": NaN
+        },
+        "Long Term Provisions": {
+            "2025-06-30": 25000000.0,
+            "2024-06-30": 24000000.0,
+            "2023-06-30": 24000000.0,
+            "2022-06-30": 23000000.0,
+            "2021-06-30": NaN
+        },
+        "Current Liabilities": {
+            "2025-06-30": 1919000000.0,
+            "2024-06-30": 1574000000.0,
+            "2023-06-30": 1917000000.0,
+            "2022-06-30": 1784000000.0,
+            "2021-06-30": NaN
+        },
+        "Current Debt And Capital Lease Obligation": {
+            "2025-06-30": 91000000.0,
+            "2024-06-30": 88000000.0,
+            "2023-06-30": 137000000.0,
+            "2022-06-30": 315000000.0,
+            "2021-06-30": NaN
+        },
+        "Current Capital Lease Obligation": {
+            "2025-06-30": 87000000.0,
+            "2024-06-30": 84000000.0,
+            "2023-06-30": 87000000.0,
+            "2022-06-30": 78000000.0,
+            "2021-06-30": NaN
+        },
+        "Current Debt": {
+            "2025-06-30": 4000000.0,
+            "2024-06-30": 4000000.0,
+            "2023-06-30": 50000000.0,
+            "2022-06-30": 237000000.0,
+            "2021-06-30": NaN
+        },
+        "Other Current Borrowings": {
+            "2025-06-30": NaN,
+            "2024-06-30": NaN,
+            "2023-06-30": NaN,
+            "2022-06-30": 237000000.0,
+            "2021-06-30": 300000000.0
+        },
+        "Current Notes Payable": {
+            "2025-06-30": 4000000.0,
+            "2024-06-30": 4000000.0,
+            "2023-06-30": 50000000.0,
+            "2022-06-30": 237000000.0,
+            "2021-06-30": NaN
+        },
+        "Pensionand Other Post Retirement Benefit Plans Current": {
+            "2025-06-30": 179000000.0,
+            "2024-06-30": 190000000.0,
+            "2023-06-30": 262000000.0,
+            "2022-06-30": 176000000.0,
+            "2021-06-30": NaN
+        },
+        "Payables And Accrued Expenses": {
+            "2025-06-30": 1649000000.0,
+            "2024-06-30": 1296000000.0,
+            "2023-06-30": 1518000000.0,
+            "2022-06-30": 1293000000.0,
+            "2021-06-30": NaN
+        },
+        "Current Accrued Expenses": {
+            "2025-06-30": 784000000.0,
+            "2024-06-30": 321000000.0,
+            "2023-06-30": 353000000.0,
+            "2022-06-30": 314000000.0,
+            "2021-06-30": NaN
+        },
+        "Payables": {
+            "2025-06-30": 865000000.0,
+            "2024-06-30": 975000000.0,
+            "2023-06-30": 1165000000.0,
+            "2022-06-30": 979000000.0,
+            "2021-06-30": NaN
+        },
+        "Dividends Payable": {
+            "2025-06-30": 27000000.0,
+            "2024-06-30": 25000000.0,
+            "2023-06-30": 23000000.0,
+            "2022-06-30": 19000000.0,
+            "2021-06-30": NaN
+        },
+        "Total Tax Payable": {
+            "2025-06-30": NaN,
+            "2024-06-30": 0.0,
+            "2023-06-30": 121000000.0,
+            "2022-06-30": 0.0,
+            "2021-06-30": 0.0
+        },
+        "Income Tax Payable": {
+            "2025-06-30": NaN,
+            "2024-06-30": 0.0,
+            "2023-06-30": 121000000.0,
+            "2022-06-30": 0.0,
+            "2021-06-30": 0.0
+        },
+        "Accounts Payable": {
+            "2025-06-30": 838000000.0,
+            "2024-06-30": 950000000.0,
+            "2023-06-30": 1021000000.0,
+            "2022-06-30": 960000000.0,
+            "2021-06-30": NaN
+        },
+        "Total Assets": {
+            "2025-06-30": 5561000000.0,
+            "2024-06-30": 5751000000.0,
+            "2023-06-30": 5945000000.0,
+            "2022-06-30": 6158000000.0,
+            "2021-06-30": NaN
+        },
+        "Total Non Current Assets": {
+            "2025-06-30": 3953000000.0,
+            "2024-06-30": 4129000000.0,
+            "2023-06-30": 4117000000.0,
+            "2022-06-30": 4433000000.0,
+            "2021-06-30": NaN
+        },
+        "Other Non Current Assets": {
+            "2025-06-30": 558000000.0,
+            "2024-06-30": 545000000.0,
+            "2023-06-30": 462000000.0,
+            "2022-06-30": 315000000.0,
+            "2021-06-30": NaN
+        },
+        "Goodwill And Other Intangible Assets": {
+            "2025-06-30": 1795000000.0,
+            "2024-06-30": 1909000000.0,
+            "2023-06-30": 1964000000.0,
+            "2022-06-30": 2442000000.0,
+            "2021-06-30": NaN
+        },
+        "Other Intangible Assets": {
+            "2025-06-30": 566000000.0,
+            "2024-06-30": 681000000.0,
+            "2023-06-30": 712000000.0,
+            "2022-06-30": 884000000.0,
+            "2021-06-30": NaN
+        },
+        "Goodwill": {
+            "2025-06-30": 1229000000.0,
+            "2024-06-30": 1228000000.0,
+            "2023-06-30": 1252000000.0,
+            "2022-06-30": 1558000000.0,
+            "2021-06-30": NaN
+        },
+        "Net PPE": {
+            "2025-06-30": 1600000000.0,
+            "2024-06-30": 1675000000.0,
+            "2023-06-30": 1691000000.0,
+            "2022-06-30": 1676000000.0,
+            "2021-06-30": NaN
+        },
+        "Accumulated Depreciation": {
+            "2025-06-30": -2911000000.0,
+            "2024-06-30": -2821000000.0,
+            "2023-06-30": -2705000000.0,
+            "2022-06-30": -2530000000.0,
+            "2021-06-30": NaN
+        },
+        "Gross PPE": {
+            "2025-06-30": 4511000000.0,
+            "2024-06-30": 4496000000.0,
+            "2023-06-30": 4396000000.0,
+            "2022-06-30": 4206000000.0,
+            "2021-06-30": NaN
+        },
+        "Construction In Progress": {
+            "2025-06-30": 154000000.0,
+            "2024-06-30": 198000000.0,
+            "2023-06-30": 186000000.0,
+            "2022-06-30": 249000000.0,
+            "2021-06-30": NaN
+        },
+        "Other Properties": {
+            "2025-06-30": 333000000.0,
+            "2024-06-30": 360000000.0,
+            "2023-06-30": 346000000.0,
+            "2022-06-30": 342000000.0,
+            "2021-06-30": NaN
+        },
+        "Machinery Furniture Equipment": {
+            "2025-06-30": 3056000000.0,
+            "2024-06-30": 2948000000.0,
+            "2023-06-30": 2886000000.0,
+            "2022-06-30": 2720000000.0,
+            "2021-06-30": NaN
+        },
+        "Buildings And Improvements": {
+            "2025-06-30": 799000000.0,
+            "2024-06-30": 816000000.0,
+            "2023-06-30": 810000000.0,
+            "2022-06-30": 729000000.0,
+            "2021-06-30": NaN
+        },
+        "Land And Improvements": {
+            "2025-06-30": 169000000.0,
+            "2024-06-30": 174000000.0,
+            "2023-06-30": 168000000.0,
+            "2022-06-30": 166000000.0,
+            "2021-06-30": NaN
+        },
+        "Properties": {
+            "2025-06-30": 0.0,
+            "2024-06-30": 0.0,
+            "2023-06-30": 0.0,
+            "2022-06-30": 0.0,
+            "2021-06-30": NaN
+        },
+        "Current Assets": {
+            "2025-06-30": 1608000000.0,
+            "2024-06-30": 1622000000.0,
+            "2023-06-30": 1828000000.0,
+            "2022-06-30": 1725000000.0,
+            "2021-06-30": NaN
+        },
+        "Other Current Assets": {
+            "2025-06-30": 97000000.0,
+            "2024-06-30": 88000000.0,
+            "2023-06-30": 77000000.0,
+            "2022-06-30": 106000000.0,
+            "2021-06-30": NaN
+        },
+        "Prepaid Assets": {
+            "2025-06-30": NaN,
+            "2024-06-30": NaN,
+            "2023-06-30": NaN,
+            "2022-06-30": 106000000.0,
+            "2021-06-30": 154000000.0
+        },
+        "Inventory": {
+            "2025-06-30": 523000000.0,
+            "2024-06-30": 637000000.0,
+            "2023-06-30": 696000000.0,
+            "2022-06-30": 755000000.0,
+            "2021-06-30": NaN
+        },
+        "Inventories Adjustments Allowances": {
+            "2025-06-30": -80000000.0,
+            "2024-06-30": NaN,
+            "2023-06-30": NaN,
+            "2022-06-30": NaN,
+            "2021-06-30": -31000000.0
+        },
+        "Finished Goods": {
+            "2025-06-30": 447000000.0,
+            "2024-06-30": NaN,
+            "2023-06-30": NaN,
+            "2022-06-30": NaN,
+            "2021-06-30": 543000000.0
+        },
+        "Work In Process": {
+            "2025-06-30": 15000000.0,
+            "2024-06-30": NaN,
+            "2023-06-30": NaN,
+            "2022-06-30": NaN,
+            "2021-06-30": 11000000.0
+        },
+        "Raw Materials": {
+            "2025-06-30": 141000000.0,
+            "2024-06-30": NaN,
+            "2023-06-30": NaN,
+            "2022-06-30": NaN,
+            "2021-06-30": 229000000.0
+        },
+        "Receivables": {
+            "2025-06-30": 821000000.0,
+            "2024-06-30": 695000000.0,
+            "2023-06-30": 688000000.0,
+            "2022-06-30": 681000000.0,
+            "2021-06-30": NaN
+        },
+        "Other Receivables": {
+            "2025-06-30": 16000000.0,
+            "2024-06-30": 36000000.0,
+            "2023-06-30": NaN,
+            "2022-06-30": NaN,
+            "2021-06-30": NaN
+        },
+        "Accounts Receivable": {
+            "2025-06-30": 805000000.0,
+            "2024-06-30": 659000000.0,
+            "2023-06-30": 688000000.0,
+            "2022-06-30": 681000000.0,
+            "2021-06-30": NaN
+        },
+        "Allowance For Doubtful Accounts Receivable": {
+            "2025-06-30": -6000000.0,
+            "2024-06-30": -5000000.0,
+            "2023-06-30": NaN,
+            "2022-06-30": NaN,
+            "2021-06-30": NaN
+        },
+        "Gross Accounts Receivable": {
+            "2025-06-30": 811000000.0,
+            "2024-06-30": 664000000.0,
+            "2023-06-30": NaN,
+            "2022-06-30": NaN,
+            "2021-06-30": NaN
+        },
+        "Cash Cash Equivalents And Short Term Investments": {
+            "2025-06-30": 167000000.0,
+            "2024-06-30": 202000000.0,
+            "2023-06-30": 367000000.0,
+            "2022-06-30": 183000000.0,
+            "2021-06-30": NaN
+        },
+        "Cash And Cash Equivalents": {
+            "2025-06-30": 167000000.0,
+            "2024-06-30": 202000000.0,
+            "2023-06-30": 367000000.0,
+            "2022-06-30": 183000000.0,
+            "2021-06-30": NaN
+        }
+    },
+    "cash_flow": {
+        "Free Cash Flow": {
+            "2025-06-30": 761000000.0,
+            "2024-06-30": 483000000.0,
+            "2023-06-30": 930000000.0,
+            "2022-06-30": 535000000.0,
+            "2021-06-30": NaN
+        },
+        "Repurchase Of Capital Stock": {
+            "2025-06-30": -332000000.0,
+            "2024-06-30": 0.0,
+            "2023-06-30": 0.0,
+            "2022-06-30": -25000000.0,
+            "2021-06-30": NaN
+        },
+        "Repayment Of Debt": {
+            "2025-06-30": NaN,
+            "2024-06-30": 0.0,
+            "2023-06-30": 0.0,
+            "2022-06-30": -1405000000.0,
+            "2021-06-30": 0.0
+        },
+        "Issuance Of Debt": {
+            "2025-06-30": NaN,
+            "2024-06-30": 0.0,
+            "2023-06-30": 0.0,
+            "2022-06-30": 1085000000.0,
+            "2021-06-30": 0.0
+        },
+        "Capital Expenditure": {
+            "2025-06-30": -220000000.0,
+            "2024-06-30": -212000000.0,
+            "2023-06-30": -228000000.0,
+            "2022-06-30": -251000000.0,
+            "2021-06-30": NaN
+        },
+        "Interest Paid Supplemental Data": {
+            "2025-06-30": 97000000.0,
+            "2024-06-30": 102000000.0,
+            "2023-06-30": 99000000.0,
+            "2022-06-30": 89000000.0,
+            "2021-06-30": NaN
+        },
+        "Income Tax Paid Supplemental Data": {
+            "2025-06-30": 264000000.0,
+            "2024-06-30": 347000000.0,
+            "2023-06-30": 73000000.0,
+            "2022-06-30": 100000000.0,
+            "2021-06-30": NaN
+        },
+        "End Cash Position": {
+            "2025-06-30": 170000000.0,
+            "2024-06-30": 207000000.0,
+            "2023-06-30": 368000000.0,
+            "2022-06-30": 186000000.0,
+            "2021-06-30": NaN
+        },
+        "Beginning Cash Position": {
+            "2025-06-30": 207000000.0,
+            "2024-06-30": 368000000.0,
+            "2023-06-30": 186000000.0,
+            "2022-06-30": 324000000.0,
+            "2021-06-30": NaN
+        },
+        "Effect Of Exchange Rate Changes": {
+            "2025-06-30": 0.0,
+            "2024-06-30": -26000000.0,
+            "2023-06-30": 0.0,
+            "2022-06-30": -6000000.0,
+            "2021-06-30": NaN
+        },
+        "Changes In Cash": {
+            "2025-06-30": -37000000.0,
+            "2024-06-30": -135000000.0,
+            "2023-06-30": 182000000.0,
+            "2022-06-30": -132000000.0,
+            "2021-06-30": NaN
+        },
+        "Financing Cash Flow": {
+            "2025-06-30": -924000000.0,
+            "2024-06-30": -655000000.0,
+            "2023-06-30": -753000000.0,
+            "2022-06-30": -689000000.0,
+            "2021-06-30": NaN
+        },
+        "Cash Flow From Continuing Financing Activities": {
+            "2025-06-30": -924000000.0,
+            "2024-06-30": -655000000.0,
+            "2023-06-30": -753000000.0,
+            "2022-06-30": -689000000.0,
+            "2021-06-30": NaN
+        },
+        "Net Other Financing Charges": {
+            "2025-06-30": -16000000.0,
+            "2024-06-30": -16000000.0,
+            "2023-06-30": -15000000.0,
+            "2022-06-30": -15000000.0,
+            "2021-06-30": NaN
+        },
+        "Proceeds From Stock Option Exercised": {
+            "2025-06-30": 26000000.0,
+            "2024-06-30": 1000000.0,
+            "2023-06-30": 33000000.0,
+            "2022-06-30": 5000000.0,
+            "2021-06-30": NaN
+        },
+        "Cash Dividends Paid": {
+            "2025-06-30": -602000000.0,
+            "2024-06-30": -595000000.0,
+            "2023-06-30": -583000000.0,
+            "2022-06-30": -571000000.0,
+            "2021-06-30": NaN
+        },
+        "Common Stock Dividend Paid": {
+            "2025-06-30": -602000000.0,
+            "2024-06-30": -595000000.0,
+            "2023-06-30": -583000000.0,
+            "2022-06-30": -571000000.0,
+            "2021-06-30": NaN
+        },
+        "Net Common Stock Issuance": {
+            "2025-06-30": -332000000.0,
+            "2024-06-30": 0.0,
+            "2023-06-30": 0.0,
+            "2022-06-30": -25000000.0,
+            "2021-06-30": NaN
+        },
+        "Common Stock Payments": {
+            "2025-06-30": -332000000.0,
+            "2024-06-30": 0.0,
+            "2023-06-30": 0.0,
+            "2022-06-30": -25000000.0,
+            "2021-06-30": NaN
+        },
+        "Net Issuance Payments Of Debt": {
+            "2025-06-30": 0.0,
+            "2024-06-30": -45000000.0,
+            "2023-06-30": -188000000.0,
+            "2022-06-30": -83000000.0,
+            "2021-06-30": NaN
+        },
+        "Net Short Term Debt Issuance": {
+            "2025-06-30": 0.0,
+            "2024-06-30": -45000000.0,
+            "2023-06-30": -188000000.0,
+            "2022-06-30": 237000000.0,
+            "2021-06-30": NaN
+        },
+        "Net Long Term Debt Issuance": {
+            "2025-06-30": NaN,
+            "2024-06-30": 0.0,
+            "2023-06-30": 0.0,
+            "2022-06-30": -320000000.0,
+            "2021-06-30": 0.0
+        },
+        "Long Term Debt Payments": {
+            "2025-06-30": NaN,
+            "2024-06-30": 0.0,
+            "2023-06-30": 0.0,
+            "2022-06-30": -1405000000.0,
+            "2021-06-30": 0.0
+        },
+        "Long Term Debt Issuance": {
+            "2025-06-30": NaN,
+            "2024-06-30": 0.0,
+            "2023-06-30": 0.0,
+            "2022-06-30": 1085000000.0,
+            "2021-06-30": 0.0
+        },
+        "Investing Cash Flow": {
+            "2025-06-30": -94000000.0,
+            "2024-06-30": -175000000.0,
+            "2023-06-30": -223000000.0,
+            "2022-06-30": -229000000.0,
+            "2021-06-30": NaN
+        },
+        "Cash Flow From Continuing Investing Activities": {
+            "2025-06-30": -94000000.0,
+            "2024-06-30": -175000000.0,
+            "2023-06-30": -223000000.0,
+            "2022-06-30": -229000000.0,
+            "2021-06-30": NaN
+        },
+        "Net Other Investing Changes": {
+            "2025-06-30": -2000000.0,
+            "2024-06-30": 20000000.0,
+            "2023-06-30": 5000000.0,
+            "2022-06-30": 22000000.0,
+            "2021-06-30": NaN
+        },
+        "Net Business Purchase And Sale": {
+            "2025-06-30": 128000000.0,
+            "2024-06-30": 17000000.0,
+            "2023-06-30": 0.0,
+            "2022-06-30": 0.0,
+            "2021-06-30": NaN
+        },
+        "Sale Of Business": {
+            "2025-06-30": 128000000.0,
+            "2024-06-30": 17000000.0,
+            "2023-06-30": 0.0,
+            "2022-06-30": 0.0,
+            "2021-06-30": NaN
+        },
+        "Purchase Of Business": {
+            "2025-06-30": NaN,
+            "2024-06-30": NaN,
+            "2023-06-30": 0.0,
+            "2022-06-30": 0.0,
+            "2021-06-30": -85000000.0
+        },
+        "Capital Expenditure Reported": {
+            "2025-06-30": -220000000.0,
+            "2024-06-30": -212000000.0,
+            "2023-06-30": -228000000.0,
+            "2022-06-30": -251000000.0,
+            "2021-06-30": NaN
+        },
+        "Operating Cash Flow": {
+            "2025-06-30": 981000000.0,
+            "2024-06-30": 695000000.0,
+            "2023-06-30": 1158000000.0,
+            "2022-06-30": 786000000.0,
+            "2021-06-30": NaN
+        },
+        "Cash Flow From Continuing Operating Activities": {
+            "2025-06-30": 981000000.0,
+            "2024-06-30": 695000000.0,
+            "2023-06-30": 1158000000.0,
+            "2022-06-30": 786000000.0,
+            "2021-06-30": NaN
+        },
+        "Change In Working Capital": {
+            "2025-06-30": -211000000.0,
+            "2024-06-30": -241000000.0,
+            "2023-06-30": 354000000.0,
+            "2022-06-30": -99000000.0,
+            "2021-06-30": NaN
+        },
+        "Change In Other Working Capital": {
+            "2025-06-30": 4000000.0,
+            "2024-06-30": -147000000.0,
+            "2023-06-30": 153000000.0,
+            "2022-06-30": 34000000.0,
+            "2021-06-30": NaN
+        },
+        "Change In Payables And Accrued Expense": {
+            "2025-06-30": -124000000.0,
+            "2024-06-30": -140000000.0,
+            "2023-06-30": 157000000.0,
+            "2022-06-30": -47000000.0,
+            "2021-06-30": NaN
+        },
+        "Change In Payable": {
+            "2025-06-30": -124000000.0,
+            "2024-06-30": -140000000.0,
+            "2023-06-30": 157000000.0,
+            "2022-06-30": -47000000.0,
+            "2021-06-30": NaN
+        },
+        "Change In Account Payable": {
+            "2025-06-30": -124000000.0,
+            "2024-06-30": -140000000.0,
+            "2023-06-30": 157000000.0,
+            "2022-06-30": -47000000.0,
+            "2021-06-30": NaN
+        },
+        "Change In Prepaid Assets": {
+            "2025-06-30": -9000000.0,
+            "2024-06-30": 25000000.0,
+            "2023-06-30": -1000000.0,
+            "2022-06-30": 16000000.0,
+            "2021-06-30": NaN
+        },
+        "Change In Inventory": {
+            "2025-06-30": 63000000.0,
+            "2024-06-30": 55000000.0,
+            "2023-06-30": 58000000.0,
+            "2022-06-30": -18000000.0,
+            "2021-06-30": NaN
+        },
+        "Change In Receivables": {
+            "2025-06-30": -145000000.0,
+            "2024-06-30": -34000000.0,
+            "2023-06-30": -13000000.0,
+            "2022-06-30": -84000000.0,
+            "2021-06-30": NaN
+        },
+        "Other Non Cash Items": {
+            "2025-06-30": -26000000.0,
+            "2024-06-30": 26000000.0,
+            "2023-06-30": 38000000.0,
+            "2022-06-30": 19000000.0,
+            "2021-06-30": NaN
+        },
+        "Stock Based Compensation": {
+            "2025-06-30": 81000000.0,
+            "2024-06-30": 74000000.0,
+            "2023-06-30": 73000000.0,
+            "2022-06-30": 52000000.0,
+            "2021-06-30": NaN
+        },
+        "Asset Impairment Charge": {
+            "2025-06-30": 0.0,
+            "2024-06-30": 0.0,
+            "2023-06-30": 445000000.0,
+            "2022-06-30": 0.0,
+            "2021-06-30": NaN
+        },
+        "Deferred Tax": {
+            "2025-06-30": -18000000.0,
+            "2024-06-30": -100000000.0,
+            "2023-06-30": -149000000.0,
+            "2022-06-30": 5000000.0,
+            "2021-06-30": NaN
+        },
+        "Deferred Income Tax": {
+            "2025-06-30": -18000000.0,
+            "2024-06-30": -100000000.0,
+            "2023-06-30": -149000000.0,
+            "2022-06-30": 5000000.0,
+            "2021-06-30": NaN
+        },
+        "Depreciation Amortization Depletion": {
+            "2025-06-30": 219000000.0,
+            "2024-06-30": 235000000.0,
+            "2023-06-30": 236000000.0,
+            "2022-06-30": 224000000.0,
+            "2021-06-30": NaN
+        },
+        "Depreciation And Amortization": {
+            "2025-06-30": 219000000.0,
+            "2024-06-30": 235000000.0,
+            "2023-06-30": 236000000.0,
+            "2022-06-30": 224000000.0,
+            "2021-06-30": NaN
+        },
+        "Amortization Cash Flow": {
+            "2025-06-30": 21000000.0,
+            "2024-06-30": 29000000.0,
+            "2023-06-30": 30000000.0,
+            "2022-06-30": 31000000.0,
+            "2021-06-30": NaN
+        },
+        "Amortization Of Intangibles": {
+            "2025-06-30": 21000000.0,
+            "2024-06-30": 29000000.0,
+            "2023-06-30": 30000000.0,
+            "2022-06-30": 31000000.0,
+            "2021-06-30": NaN
+        },
+        "Depreciation": {
+            "2025-06-30": 198000000.0,
+            "2024-06-30": 206000000.0,
+            "2023-06-30": 206000000.0,
+            "2022-06-30": 193000000.0,
+            "2021-06-30": NaN
+        },
+        "Operating Gains Losses": {
+            "2025-06-30": 112000000.0,
+            "2024-06-30": 409000000.0,
+            "2023-06-30": NaN,
+            "2022-06-30": 114000000.0,
+            "2021-06-30": NaN
+        },
+        "Pension And Employee Benefit Expense": {
+            "2025-06-30": 0.0,
+            "2024-06-30": 171000000.0,
+            "2023-06-30": 0.0,
+            "2022-06-30": 0.0,
+            "2021-06-30": NaN
+        },
+        "Gain Loss On Investment Securities": {
+            "2025-06-30": NaN,
+            "2024-06-30": NaN,
+            "2023-06-30": NaN,
+            "2022-06-30": 114000000.0,
+            "2021-06-30": NaN
+        },
+        "Gain Loss On Sale Of Business": {
+            "2025-06-30": 112000000.0,
+            "2024-06-30": 238000000.0,
+            "2023-06-30": 0.0,
+            "2022-06-30": 0.0,
+            "2021-06-30": NaN
+        },
+        "Net Income From Continuing Operations": {
+            "2025-06-30": 824000000.0,
+            "2024-06-30": 292000000.0,
+            "2023-06-30": 161000000.0,
+            "2022-06-30": 471000000.0,
+            "2021-06-30": NaN
+        }
+    }
+}
